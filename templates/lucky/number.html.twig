@@ -1,0 +1,9 @@
+{# templates/lucky/number.html.twig #}
+<p>{{ app.user ? app.user.email : '' }}</p>
+<p>
+    <a href="/{{ app.user ? 'logout' : 'login' }}">
+        {{ app.user ? 'Logout' : 'Login' }}
+    </a>
+</p>
+
+<h1>Your lucky number is {{ number }}</h1>
